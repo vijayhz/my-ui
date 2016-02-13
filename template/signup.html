@@ -1,1 +1,8 @@
 {{welcome}}
+
+<form ng-submit="signup(user)">
+    Name:<input type="text" ng-model="user.userName" required placeholder="Enter name" /> <br>
+    Email:<input type="email" ng-model="user.userEmail" required placeholder="Enter email" /> <br>
+    Password:<input type="password" ng-model="user.password" required placeholder="Enter pasword"> <br>
+    <input type="submit" value="Login" />
+</form>
